@@ -1,3 +1,3 @@
 Natalia Moscoso 
-natymosäyahoo.com
+natymos@yahoo.com
 # HTML-CSS
