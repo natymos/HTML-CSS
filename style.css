@@ -1,0 +1,694 @@
+body{margin: 0;}
+.parteprincipal {
+    background-image: url(img/fotoprincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    filter: drop-shadow(95%);
+    width: 100%;
+}
+.logoresp{display: none;
+width: 1em;height: auto;
+}
+
+.barra_header {
+    background-color: rgb(218, 216, 216);
+    width: 100%;
+    padding: 20px 30px;
+    display: inline-flex;
+    position: relative;
+    top: 0%;
+    z-index: 1;
+    border-bottom: solid 3px aliceblue;
+    align-items: center;
+    ;
+}
+
+
+.listabarra {
+    background-color: transparent;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 80px;
+}
+
+.listabarra1 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    flex: 50%;
+
+}
+
+.logo {
+    flex: 50%
+}
+
+#logo1 {
+    display: inline;
+    width: 280px;
+
+    background-color: transparent;
+}
+
+#boton1,
+#boton2,
+#boton3,
+#boton4,
+#boton5 {
+    background-color: transparent;
+    border-bottom: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    font-size: 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+}
+
+#boton1 {
+    color: grey;
+}
+
+#boton2 {
+    color: antiquewhite
+}
+
+#boton3 {
+    color: grey
+}
+
+#boton4 {
+    color: antiquewhite;
+}
+
+#boton5 {
+    color: antiquewhite;
+}
+
+
+.follow {
+    position: sticky;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    writing-mode: vertical-rl;
+    display: inline-flex;
+    justify-content: space-between;
+    top: 180px;
+    z-index: 1;
+    background-color: transparent;
+    opacity: 75%;
+    gap: 5px;
+    width: max-content;
+    height: fit-content;
+}
+
+hr {
+    border-left: 6px solid white;
+    height: 4em;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: auto;
+    width: 4em;
+}
+
+#bfollow {
+    background-color: transparent;
+    font-size: 20px;
+    border: 0px;
+    margin: 0px;
+    list-style-position: inside;
+    position: sticky;
+    top: 590px;
+    z-index: 2;
+    color: aliceblue;
+    height: inherit;
+}
+
+.titulo {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-top: 12%;
+    ;
+}
+
+h1 {
+    color: rgb(117, 109, 109);
+    font-size: 28px;
+    top: 800px;
+    margin: 0%;
+}
+
+h2 {
+    color: white;
+    font-size: 4em;
+    margin: 0em 0em 0.83em
+}
+
+.botones {
+    border-radius: 25px;
+    color: white;
+    border-color: beige;
+    background-color: transparent;
+    height: 45px;
+    font: 1em sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.barra_de_busqueda {
+    position: relative;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+}
+
+
+.section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.ventas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section2 {
+    display: inline-flex;
+    height: 550px;
+    padding: 10% 5%;
+}
+
+.fotosventa {
+    display: grid;
+    flex: 50%;
+    overflow: hidden;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 80% 20%;
+    align-items: self-end;
+    justify-items: center;
+    column-gap: 5%;
+    row-gap: 0%;
+
+}
+
+p {
+    color: dark;
+    size: large;
+    font-size: 2rem;
+    margin-top: 0;
+
+}
+
+.city {
+    font-size: large;
+    color: rgb(59, 59, 59);
+    align-self: start;
+    margin: 0;
+}
+
+
+.venta2,
+.venta1 {
+    width: auto;
+    height: auto;
+}
+
+.venta3 {
+    width: auto;
+    height: auto;
+}
+
+.propventa {
+    display: block;
+    width: 100%;
+    flex: 50%
+}
+
+.galeria {
+    color: rgb(192, 140, 77);
+    font-size: 1em;
+    direction: rtl;
+}
+
+h3 {
+    color: black;
+    font-size: 4rem;
+    direction: rtl;
+    margin: 0;
+}
+
+.bgaleria {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    margin: 20%;
+    align-items: center;
+    margin-top: 30%;
+   ;
+}
+
+.b2 {
+    border-radius: 25px;
+    color: white;
+    border-color: beige;
+    background-color: transparent;
+    height: 45px;
+    box-sizing: max-content;
+    font: 1em sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+/*Seccion 3*/
+
+.galeria1 {
+    color: rgb(192, 140, 77);
+    font-size: 1em;
+    direction: ltr;
+    flex: 50%
+}
+
+h4 {
+    color: black;
+    font-size: 4rem;
+    direction: ltr;
+    margin: 0;
+}
+
+.bwgalery {
+    color: grey;
+    background-color: transparent;
+    ;
+    border-color: transparent;
+}
+
+.botones1 {
+    border-radius: 25px;
+    color: rgb(35, 35, 41);
+    border-color: beige;
+    background-color: transparent;
+    height: 45px;
+    width: 35%;
+    font: 20px sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section3 {
+    display: flex;
+    height: 550px;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section3A {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+}
+
+.section3B {
+    flex: 50%;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 80% 20%;
+    column-gap: 5%;
+    align-items: self-end;
+    justify-items: center;
+    width: 960px;
+    box-sizing: border-box;
+}
+
+.venta3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    align-self: start;
+    ;
+}
+
+.bgaleria2 {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    align-items: center;
+    margin-top: 15%;
+    justify-content: center;
+
+}
+
+/*Seccion4*/
+
+.section4 {
+    display: block;
+    height: 1300px;
+  }
+
+.galeria3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1%;
+    column-gap: 1%;
+    padding: 5%;
+}
+
+.header4 {
+    display: inline-block;
+    width: 100%;
+    padding: 5% 35% 0%;
+}
+
+.galeria1A {
+    color: rgb(192, 140, 77);
+    font-size: 1em;
+    direction: ltr;
+    padding: 0% 4%;
+
+}
+
+/*Seccion5*/
+.section5 {
+    display: block;
+    height: 1011px;
+    width: 100%;
+    padding: 5%;
+}
+
+.servart {
+    display: flex;
+    height: 1011px;
+    width: 100%;
+}
+
+.art {
+    flex: 60%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "black0 black0 black0 black0 transparent1 transparent1"
+        "black1 imga imga imga imga imga"
+        "black1 imga imga imga imga imga"
+        "black1 imga imga imga imga imga"
+        "black1 imga imga imga imga imga"
+        "black1 imga imga imga imga imga"
+        "black1 imga imga imga imga imga"
+        "black2 black2 black2 black2 transparent2 transparent2"
+    ;
+}
+
+#black0 {
+    background-color: black;
+    grid-area: black0;
+}
+
+#transparent1 {
+    background-color: transparent;
+    grid-area: transparent1;
+}
+
+#black1 {
+    background-color: black;
+    grid-area: black1;
+}
+
+#imga {
+    background: url(img/Group_289.png);
+    grid-area: imga;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#black2 {
+    background-color: black;
+    grid-area: black2;
+}
+
+#transparent2 {
+    background-color: transparent;
+    grid-area: transparent2;
+}
+
+
+.services {
+    flex: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.imgs {
+    background-size: cover;
+    padding-left: 3%;
+}
+
+h5 {
+    margin-top: 10%;
+    margin-bottom: 0;
+    color: #efc78b;
+    font-family: ui-sans-serif;
+    font-size: 3em;
+    margin-left: 10%;
+}
+
+h6 {
+    font-size: 4em;
+    color: black;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.description {
+    font-size: 1em;
+    color: black;
+    margin-top: 10%;
+    direction: ltr;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10%;
+}
+.bgaleria5 {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    align-items: center;
+    margin-top: 30%;
+   justify-content: center;
+}
+
+footer{display: block;
+    height: 1000px;
+    width: 100%;
+}
+
+.final { 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+}
+
+#t1 {background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;}
+#t2 {background-color: white;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;}
+#lista {background-color:black;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 6;
+    opacity:85%;
+    display: block;
+    padding: 10%;
+}
+#menu2 {background-color: black;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    opacity:85%;
+    display: block;
+    padding-right: 10%;
+    padding: 10%;
+}
+#b1 {background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;}
+#b2 {background-color: black;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 4;}
+#fx1 {background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    padding-top: 20%;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding-bottom: 3%;
+}
+
+#fx2 {background-color: black;
+     display: flex; 
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    align-items: end;
+    padding-bottom: 3%;
+}
+
+
+#pf {background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 10;;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid white;
+    gap:1%;
+    align-items: center;
+}
+
+.Join {
+    display:inline-flex;
+    color: rgb(239, 197, 167);
+font-size: 2em;
+font-family: 'Times New Roman', Times, serif;
+direction: rtl;
+}
+
+.unlock {color: white;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {font-size: 1em;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {background-color: transparent;
+    color: grey;
+    opacity: 30%;
+    border-radius: 25px;
+    border-color: grey;
+    height: 3em;
+    width: 90%;
+    padding-left: 10%;
+}
+.Submit {border-radius: 25px;
+    border-color: #efc78b;
+    background-color: transparent;
+    color: #efc78b;
+    padding: 5%;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 7%;
+}
+
+.fx1a {background-color:transparent;
+    flex:70%;
+    display:block;
+
+}
+
+.logofinal {width: 80%;
+height: auto;
+padding-bottom: 10%;
+}
+
+.become{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color:white;
+}
+.fx1b {background-color: transparent;
+    flex:30%;
+    display:block;
+justify-content:start;
+align-content:end;
+padding-bottom: 5%;
+font-family: ui-sans-serif;
+font-size: small;
+}
+
+.fx2.a {background-color: transparent;
+       flex:50%;
+    display:block;
+justify-content:start;
+align-content:end;
+
+}
+
+.contact{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color:white;
+    padding-top: 10%;
+}
+.fx2.b {background-color: transparent;
+    flex:50%;
+ display:block;
+justify-content:end;
+align-content:end;
+direction: rtl;
+padding-right: 30%;
+}
+
+.phone {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 3%;
+}
+
+.Call {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color:white;}
+
+.final {color: antiquewhite;
+    border:5%;
+}
+
+.rightf {display:flex;
+    color:antiquewhite;
+}
+ 
+.derechos{width: 1rem;
+height: 1rem;}

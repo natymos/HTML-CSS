@@ -1,0 +1,30 @@
+  @media screen and (width<=428px){
+#logo1{display: none;}
+.logoresp{display:block;justify-items: start;}
+.logo{display: none;}
+.listabarra{display: none;}
+#boton3,#boton4{display: none;}
+.titulo{align-items: end;}
+.vl.2{display: none;}
+.parteprincipal{background-position: center;
+height: 400px;}
+.listabarra1{display:none;}
+ #bfollow{display: none;}
+h1,h2,{justify-content: :left;align-items:end;}
+.botones{justify-content: center;}
+.section2{
+    display: inline-flex;
+    flex-direction: column-reverse;
+}
+.fotosventa{
+
+}
+.venta3{display: none;}
+}
+#alemania{display:none;}
+
+ .section3A{padding-top: 20%;
+ flex-direction:colum;}
+ .section4{padding-top: 30%;}
+
+ .galeria3{display:none}
