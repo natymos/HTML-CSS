@@ -665,7 +665,6 @@ align-content:end;
 }
 .fx2.b {background-color: transparent;
     flex:50%;
- display:flex;
 flex-direction: column;
 align-items: end;
 direction: rtl;
