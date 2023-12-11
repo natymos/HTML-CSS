@@ -16,7 +16,6 @@ width: 1em;height: auto;
     width: 100%;
     padding: 20px 30px;
     display: inline-flex;
-    position: relative;
     top: 0%;
     z-index: 1;
     border-bottom: solid 3px aliceblue;
@@ -252,7 +251,6 @@ h3 {
     display: flex;
     gap: 5%;
     width: 100%;
-    margin: 20%;
     align-items: center;
     margin-top: 30%;
    ;
@@ -376,7 +374,8 @@ img {
 
 .header4 {
     display: inline-block;
-    width: 100%;
+    width: fit-content;
+    border: 0;
     padding: 5% 35% 0%;
 }
 
@@ -392,8 +391,8 @@ img {
 .section5 {
     display: block;
     height: 1011px;
-    width: 100%;
     padding: 5%;
+    width: -webkit-fill-available;
 }
 
 .servart {
@@ -665,8 +664,6 @@ align-content:end;
 }
 .fx2.b {background-color: transparent;
     flex:50%;
-flex-direction: column;
-align-items: end;
 direction: rtl;
 padding-right: 30%;
 }
