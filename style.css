@@ -1,11 +1,14 @@
+*{border: solid 2px red;}
+
+
 body{margin: 0;}
 .parteprincipal {
     background-image: url(img/fotoprincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1080px;
+    height:fit-content;
     filter: drop-shadow(95%);
-    width: 100%;
+    /*width: 100%;*/
 }
 .logoresp{display: none;
 width: 1em;height: auto;
@@ -13,7 +16,7 @@ width: 1em;height: auto;
 
 .barra_header {
     background-color: rgb(218, 216, 216);
-    width: 100%;
+    width: fit-content;
     padding: 20px 30px;
     display: inline-flex;
     top: 0%;
@@ -88,7 +91,7 @@ width: 1em;height: auto;
     color: antiquewhite;
 }
 
-
+#Menu1{}
 .follow {
     position: sticky;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -662,7 +665,8 @@ align-content:end;
     color:white;
     padding-top: 10%;
 }
-.fx2.b {background-color: transparent;
+.fx2.b {border: 0;
+    background-color: transparent;
     flex:50%;
 direction: rtl;
 padding-right: 30%;
