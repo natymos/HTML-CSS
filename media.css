@@ -1,4 +1,4 @@
-  @media screen and (width<=428px){
+  @media screen and (width<=431px){
 #logo1{display: none;}
 .logoresp{display:block;justify-items: start;}
 .logo{display: none;}
