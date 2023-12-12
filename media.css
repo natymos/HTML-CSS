@@ -8,9 +8,15 @@
   #bfollow{display: none;}
   .titulo{align-items: end;}
   .logohidden{display:inline;}
+.barra_header{width: 10%;
+  height: auto;
+}
+#Menu1{display: inline;width: 10%;
+  height: auto;
+align-self: end;}
 }
 
-@media screen and (width<=431px){
+/*@media screen and (width<=431px){
   .logohidden{display:flex;
     align-items: flex-start;
     justify-content: start;
@@ -43,4 +49,4 @@ h1,h2,{justify-content: :center;align-items:end;}
  .section4{padding-top: 30%;}
 
  .galeria3{display:none}
-}
+}*/
