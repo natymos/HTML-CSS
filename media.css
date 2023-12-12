@@ -3,6 +3,9 @@
   #Menur1{display: none;}
 }
 @media screen and (width<=600px){
+.parteprincipal{background-position: center;
+  height:400px ;}
+
   .listabarra1,
   #logo1{display:none;
   }
