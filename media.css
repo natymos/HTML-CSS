@@ -1,11 +1,20 @@
+@media screen and (width>600px){
+  .logohidden{display:none;}
+}
 @media screen and (width<=600px){
-  .listabarra1{display:none;}
+  .listabarra1,
+  #logo1{display:none;
+  }
   #bfollow{display: none;}
-
+  .titulo{align-items: end;}
+  .logohidden{display:inline;}
 }
 
 @media screen and (width<=431px){
-#logo1{display: none;}
+  .logohidden{display:flex;
+    align-items: flex-start;
+    justify-content: start;}
+}
 .logoresp{display:block;justify-items: start;}
 .logo{display: none;}
 .listabarra{display: none;}
@@ -17,8 +26,8 @@
 height: 400px;}
 .listabarra1{display:none;}
  #bfollow{display: none;}
-h1,h2,{justify-content: :left;align-items:end;}
-.botones{justify-content: center;}
+h1,h2,{justify-content: :center;align-items:end;}
+.botones{justify-content: center;align-items: start;}
 .section2{
     display: inline-flex;
     flex-direction: column-reverse;

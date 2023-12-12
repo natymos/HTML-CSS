@@ -106,6 +106,8 @@ height: auto;}
     width: max-content;
     height: fit-content;
 }
+.logohidden{display: hidden;
+width: 1px;height: 1px;}
 
 hr {
     border-left: 6px solid white;
