@@ -10,7 +10,8 @@
 .logo{display: none;}
 .listabarra{display: none;}
 #boton3,#boton4{display: none;}
-.titulo{align-items: end;}
+.botones{align-items: center;}
+.titulo{display: hidden;}
 .vl.2{display: none;}
 .parteprincipal{background-position: center;
 height: 400px;}
