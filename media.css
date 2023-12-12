@@ -13,8 +13,9 @@
 @media screen and (width<=431px){
   .logohidden{display:flex;
     align-items: flex-start;
-    justify-content: start;}
-}
+    justify-content: start;
+  width: 2%; height: auto;}
+
 .logoresp{display:block;justify-items: start;}
 .logo{display: none;}
 .listabarra{display: none;}
