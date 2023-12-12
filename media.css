@@ -1,4 +1,10 @@
-  @media screen and (width<=431px){
+@media screen and (width<=600px){
+  .listabarra1{display:none;}
+  #bfollow{display: none;}
+
+}
+
+@media screen and (width<=431px){
 #logo1{display: none;}
 .logoresp{display:block;justify-items: start;}
 .logo{display: none;}
