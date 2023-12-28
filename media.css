@@ -1,11 +1,11 @@
-@media screen and (width>600px){
+@media screen and (width>800px){
   .logohidden{display:none;}
   #Menur1{display: none;}
 }
-@media screen and (width<=600px){
+@media screen and (width<=800px){
 .parteprincipal{background-position: center;
   height: 600px;px ;}
-header{width: 100%;
+header{width: fit-content;
   height: 30px; background-color: transparent}
   .listabarra1,
   #logo1{display:none;
@@ -16,7 +16,7 @@ header{width: 100%;
   .logohidden{display:inline; 
     width: fit-content;
     overflow: hidden;}
-.barra_header{width: 100%;
+.barra_header{width: fit-content;
   height: 100px ;
   background-color: transparent;
   padding: 0;
