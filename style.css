@@ -1,21 +1,27 @@
+*{
+    border: 2px solid Tomato; 
+    overflow-x: hidden;
+}
 
 body{margin: 0;}
 .parteprincipal {
     background-image: url(img/fotoprincipal.jpg);
+    background-position-x:center;
+    background-position-y:27%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1080px;;
+    /*height: 1080px;;*/
     filter: drop-shadow(95%);
     /*width: 100%;*/
 }
 .logoresp{display: none;
-width: 1em;height: auto;
+width: 2em;height: auto;
 }
 
 .barra_header {
-    background-color: rgb(218, 216, 216);
+    background-color: #575a5d3d;;
     width: -webkit-fill-available;
-    padding: 20px 30px;
+    /*padding: 20px 30px;*/
     display: inline-flex;
     top: 0%;
     z-index: 1;
@@ -44,14 +50,17 @@ width: 1em;height: auto;
 }
 
 .logo {
-    flex: 50%
+    flex: 50%;
+    overflow-y: hidden;
 }
 
 #logo1 {
     display: inline;
-    width: 280px;
-
+    width: 25%;
+padding-left: 10%;
     background-color: transparent;
+    height: fit-content;
+   ;
 }
 
 #boton1,
@@ -90,7 +99,7 @@ width: 1em;height: auto;
 }
 
 #Menu1{width: 1em;
-height: auto;}
+height: fit-content;}
 
 .follow {
     position: fixed;
@@ -119,7 +128,19 @@ hr {
     width: 3%;
 }
 
-#linkedin{padding-top: 30%;}
+
+.barra1 {display:flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.bud{flex: 50%;
+    padding-top: 1%;
+    padding-left: 30%;
+}
+
+.parrafo1{display:none;}
+
 
 #bfollow {
     background-color: transparent;
@@ -130,17 +151,17 @@ hr {
     position: sticky;
     top: 590px;
     z-index: 2;
-    color: aliceblue;
+    color: rgb(69, 77, 83);
     height: inherit;
 }
-
+.titulo{flex: 50%;}
 .titulo {
     background-color: transparent;
     display: flex;
     flex-direction: column;
     padding-left: 7%;
     padding-top: 35%;
-    ;
+    justify-content: center;
 }
 
 h1 {
@@ -153,7 +174,7 @@ h1 {
 h2 {
     color: white;
     font-size: 4em;
-    margin: 0em 0em 0.83em
+    margin: 0em 0em 0.83em;
 }
 
 .botones {
@@ -165,7 +186,8 @@ h2 {
     font: 1em sans-serif;
     display: flex;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    width: 55%;
 }
 
 .barra_de_busqueda {
@@ -177,9 +199,9 @@ h2 {
 
 
 .section1 {
-    width: 100%;
-    height: 100%;
+    width: 90%;
     display: flex;
+    height: fit-content;
 
 }
 
@@ -208,6 +230,7 @@ h2 {
     justify-items: center;
     column-gap: 5%;
     row-gap: 0%;
+    object-fit: cover;
 
 }
 
@@ -231,12 +254,16 @@ p {
 .venta1 {
     width: auto;
     height: auto;
+    overflow-y: hidden;
 }
 
 .venta3 {
-    width: auto;
+    width: fit-content;
     height: auto;
-}
+    overflow-y: hidden;
+    box-sizing: border-box;
+   }
+
 
 .propventa {
     display: block;
@@ -280,6 +307,27 @@ h3 {
 }
 
 /*Seccion 3*/
+.venta3.1 {
+    width: -webkit-fill-available;
+    height: fit-content;
+    overflow-y:hidden;
+}
+.ventag{width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    overflow:hidden;
+
+}
+
+.venta4{
+    width: -webkit-fill-available;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#renta{width: fit-content;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;}
 
 .galeria1 {
     color: rgb(192, 140, 77);
@@ -317,16 +365,17 @@ h4 {
 
 .section3 {border:0;
     display: flex;
-    height: 550px;
+    height: fit-content;
     align-items: center;
   
 }
 
 img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: fit-content;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .section3A {
@@ -350,13 +399,7 @@ img {
     overflow: hidden;
 }
 
-.venta3 {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    align-self: start;
-    ;
-}
+
 
 .bgaleria2 {
     display: flex;
@@ -396,8 +439,9 @@ img {
     font-size: 1em;
     direction: ltr;
     padding: 0% 4%;
-
 }
+
+.galeria3.1 {display:none;}
 
 /*Seccion5*/
 .section5 {
