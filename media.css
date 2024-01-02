@@ -2,8 +2,7 @@
 
   .logohidden{display:none;}
   #Menur1{display: none;}
-  .galeria3.1{display: none;}
-
+  
   }
 
 
@@ -169,9 +168,8 @@ h4{font-size: 2em;}
   width: 100%;}
 
 .galeria3{display: none;}
-.galeria3.1{display:inline;
+.galeriahidden{
   display: grid;
-  grid-template-columns: 1, 1fr;
   grid-template-rows: auto;
   row-gap: 1%;
   justify-content: center;
@@ -181,17 +179,77 @@ h4{font-size: 2em;}
 .galeria1A{padding: 0;}
 
 
-.galeriafinal1{background-image: url(img/sala1.png) ;
-  height: fit-content;
-  display: block;
-   background-position-x: center;
-  background-position-y: 27%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: drop-shadow(95%);
-  
+.galeriafinal{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  overflow-y: hidden; 
 }
 
+.section5 {padding: 0%;}
+
+.servart{
+flex-direction: column-reverse;
+}
+
+h5{font-size: 1em;
+margin: 0%;
+border:0%;
+height: fit-content;
+}
+h6{font-size: 2em;
+    margin: 0%;
+    border:0%;
+    height: fit-content;
+    overflow-y: hidden}
+
+.services {      
+    padding-left: 0%; 
+    overflow-y: hidden;
+    height: max-content
+  }
+  .bgaleria5 {
+     margin-top: 5%;
+     overflow-y: hidden;
+     height: max-content
+    }
+
+.description {
+      font-size: 1em;
+      color: black;
+      margin-top: 1%;
+      margin-left: 0%;
+      height:100px;
+      overflow-y: hidden;
+}
+
+.art {
+  flex: 60%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas:
+      "black0 black0 black0 black0 black0 black0 transparent1"
+      "black1 black1 black1 black1 black1 black1 transparent1"
+      "black1 black1 black1 black1 black1 black1 transparent1"
+      "black1 black1 black1 black1 black1 black1 transparent1"
+      "imgin imgx imgf imgi imgy black0 black0 transparent1"
+      "black1 black1 black1 black1 black1 black1 transparent2"
+      "black1 black1 black1 black1 black1 black1 transparent2"
+      "black1 black1 black1 black1 black1 black1 transparent2"
+      "black2 black2 black2 black2 black2 black2 transparent2"
+}
+
+#imgin {background: url(img/instagram.png); grid-area:imgin; width: 1em; height: auto;color: cyan;} 
+#imgx {background: url(img/x.png); grid-area:imgx; width: 1em; height: auto;color: cyan;} 
+#imgf {background: url(img/facebook.png); grid-area:imgf; width: 1em; height: auto;color: cyan;} 
+#imgi {background: url(img/instagram.png); grid-area:imgi; width: 1em; height: auto;color: cyan;} 
+#imgy {background: url(img/youtube.png); grid-area:imgy; width: 1em; height: auto;color: cyan;}
+
+#imga {
+  display:none;}
+
+.bgaleria5.1{display:inline;
+}
 
 
 

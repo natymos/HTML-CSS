@@ -441,7 +441,8 @@ img {
     padding: 0% 4%;
 }
 
-/*.galeria3.1 {display:none;}*/
+.galeriahidden {display:none;}
+.bgaleria5.1{display:none;}
 
 /*Seccion5*/
 .section5 {
@@ -553,6 +554,9 @@ h6 {
     margin-top: 30%;
    justify-content: center;
 }
+
+.bgaleria5.1 {
+    display:none;}
 
 footer{display: block;
     height: 1000px;
