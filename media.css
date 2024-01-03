@@ -189,37 +189,50 @@ h4{font-size: 2em;}
 
 .servart{
 flex-direction: column-reverse;
+width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    overflow-y: hidden;
 }
 
 h5{font-size: 1em;
 margin: 0%;
 border:0%;
-height: fit-content;
-}
+    overflow-y: hidden;
+    }
+
 h6{font-size: 2em;
     margin: 0%;
     border:0%;
-    height: fit-content;
-    overflow-y: hidden}
-
-.services {      
-    padding-left: 0%; 
     overflow-y: hidden;
-    height: max-content
-  }
-  .bgaleria5 {
-     margin-top: 5%;
-     overflow-y: hidden;
-     height: max-content
     }
 
+.services {      
+  display: block;
+ padding-top: 0%;
+ padding-left: 0%;
+  }
+ 
+
+ .bgaleria5.1 { margin-top: 0%;
+    overflow-y: hidden;
+    font-size: 2em;
+    color: yellow; 
+    direction: rtl
+    }
+
+.botones1{border:none; direction: rtl;}
+
+.bgaleria5 {display: none;}
+
+/*.tituloservicios{height: 900px }*/
+.imgs{height:fit-content;}
 .description {
       font-size: 1em;
       color: black;
       margin-top: 1%;
       margin-left: 0%;
-      height:100px;
-      overflow-y: hidden;
+      overflow-y: hidden;  
+      height:fit-content;      
 }
 
 .art {
