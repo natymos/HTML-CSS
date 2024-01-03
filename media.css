@@ -2,7 +2,7 @@
 
   .logohidden{display:none;}
   #Menur1{display: none;}
-  
+  .bgaleria5{display:none}
   }
 
 
@@ -183,6 +183,7 @@ h4{font-size: 2em;}
   width: -webkit-fill-available;
   height: -webkit-fill-available;
   overflow-y: hidden; 
+  
 }
 
 .section5 {padding: 0%;}
@@ -199,25 +200,21 @@ margin: 0%;
 border:0%;
     overflow-y: hidden;
     }
-
 h6{font-size: 2em;
     margin: 0%;
     border:0%;
     overflow-y: hidden;
     }
-
 .services {      
   display: block;
  padding-top: 0%;
  padding-left: 0%;
   }
- 
-
  .bgaleria5.1 { margin-top: 0%;
     overflow-y: hidden;
     font-size: 2em;
-    color: yellow; 
-    direction: rtl
+    color: brown; 
+    direction:ltr;
     }
 
 .botones1{border:none; direction: rtl;}

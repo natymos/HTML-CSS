@@ -442,7 +442,6 @@ img {
 }
 
 .galeriahidden {display:none;}
-.bgaleria5.1{display:none;}
 
 /*Seccion5*/
 .section5 {
@@ -556,7 +555,8 @@ h6 {
 }
 
 .bgaleria5.1 {
-    display:none;}
+    display:none;
+}
 
 footer{display: block;
     height: 1000px;
