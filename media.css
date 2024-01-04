@@ -3,6 +3,7 @@
   .logohidden{display:none;}
   #Menur1{display: none;}
   .bgaleria5{display:none;}
+  
   #imga {
     display:inline;}
   
@@ -238,92 +239,34 @@ h6{font-size: 2em;
 }
 .art{display: none;}
 .art1{display:grid;}
-/*.art1 {
+.art1 {
   flex: 60%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(9, 1fr);
-}    
-#black0 {
-  grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 5;  
-    background-color: black;
+}  
+#xblack,
+  #atransparent,
+  #ablack,
+  #bblack,
+  #btransparent,
+  #imgin,
+  #imgx,
+  #imgf,
+  #imgi,
+  #imgy{display: inline;
+ }
+ #contacto {
+  display: inline;
+}
+.final{display:none}
+
+.fotofinal{
+  display:inline;
   }
-
-#black1 {
-  background: black;
-  grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 6;
-    grid-row-end: 9;}
-
-#black2 {
-      background: black;
-      grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 6;    
-    }
-
-#imgin {/*background-image: url(img/instagram.png);*/
-  background-color: #DF991B;
-  background-repeat: no-repeat;
-    background-size: cover;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;}
-
-
-#imgx {background: url(img/x.png); 
-  background-repeat: no-repeat;
-    background-size: cover;
-     grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-} 
-#imgf {background: url(img/facebook.png); 
-  background-repeat: no-repeat;
-    background-size: cover;
-  grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
-
-
-} 
-#imgi {background: url(img/instagram.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-   grid-column-start: 4;
-   grid-column-end: 5;
-   grid-row-start: 5;
-   grid-row-end: 6;
-  
-  } 
-#imgy {background: url(img/youtube.png); 
-  background-repeat: no-repeat;
-    background-size:contain;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}*/
-#transparent1 {
-  background-color: transparent;
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 9;
+.rightf{display: flex; color: rgb(38, 38, 92);}
+.derechos1{display: flex;
 }
-
 
 }
 
-
-
-
-}

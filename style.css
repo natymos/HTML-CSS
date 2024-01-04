@@ -11,7 +11,6 @@ body {
     background-position-y: 27%;
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: 1080px;;*/
         filter: drop-shadow(95%);
     
 }
@@ -576,6 +575,7 @@ img {
     grid-area: transparent1;
 
 }
+
 #btransparent {
     background-color: transparent;
     grid-area: transparent2;
@@ -607,40 +607,44 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     grid-column-start: 3;
-      grid-column-end: 4;
+    grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
 
 
 }
-  #imgi {background: url(img/instagram.png);
+  #imgi {background: url(img/instagram1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-     grid-column-start: 4;
-     grid-column-end: 5;
-     grid-row-start: 5;
-     grid-row-end: 6;
-    
-    } 
-  #imgy {background: url(img/youtube.png); 
+    background-size: contain;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+}
+
+#imgy {
+    background: url(img/youtube1.png);
     background-repeat: no-repeat;
-      background-size:contain;
+    background-size: contain;
     grid-column-start: 5;
     grid-column-end: 6;
-    grid-row-start: 5;
+    grid-row-start: 4;
     grid-row-end: 6;
-  }
+}
 
-  #xblack,
-  #atransparent,
-  #ablack,
-  #bblack,
-  #btransparent,
-  #imgin,
-  #imgx,
-  #imgf,
-  #imgi,
-  #imgy{display: none;}
+#xblack,
+#atransparent,
+#ablack,
+#bblack,
+#btransparent,
+#imgin,
+#imgx,
+#imgf,
+#imgi,
+#imgy {
+    display: none;
+}
 
 
 
@@ -679,74 +683,93 @@ h6 {
     color: black;
     margin-top: 10%;
     direction: ltr;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 10%;
 }
+
 .bgaleria5 {
     display: flex;
     gap: 5%;
     width: 100%;
     align-items: center;
     margin-top: 30%;
-   justify-content: center;
+    justify-content: center;
 }
 
 .bgaleria5.1 {
-    display:none;
+    display: none;
 }
 
-footer{display: block;
+footer {
+    display: block;
     height: 1000px;
     width: 100%;
 }
 
-.final { 
+.final {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    
+
 }
 
-#t1 {background-color: white;
+#t1 {
+    background-color: white;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;}
-#t2 {background-color: white;
+    grid-row-end: 2;
+}
+
+#t2 {
+    background-color: white;
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 1;
-    grid-row-end: 2;}
-#lista {background-color:black;
+    grid-row-end: 2;
+}
+
+#lista {
+    background-color: black;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-end: 6;
-    opacity:85%;
+    opacity: 85%;
     display: block;
     padding: 10%;
 }
-#menu2 {background-color: black;
+
+#menu2 {
+    background-color: black;
     grid-column-start: 6;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 4;
-    opacity:85%;
+    opacity: 85%;
     display: block;
     padding-right: 10%;
     padding: 10%;
 }
-#b1 {background-color: black;
+
+#b1 {
+    background-color: black;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 5;}
-#b2 {background-color: black;
+    grid-row-end: 5;
+}
+
+#b2 {
+    background-color: black;
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 2;
-    grid-row-end: 4;}
-#fx1 {background-color: black;
+    grid-row-end: 4;
+}
+
+#fx1 {
+    background-color: black;
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 4;
@@ -759,8 +782,9 @@ footer{display: block;
     padding-bottom: 3%;
 }
 
-#fx2 {background-color: black;
-     display: flex; 
+#fx2 {
+    background-color: black;
+    display: flex;
     grid-column-start: 6;
     grid-column-end: 12;
     grid-row-start: 4;
@@ -770,39 +794,44 @@ footer{display: block;
 }
 
 
-#pf {background-color: black;
+#pf {
+    background-color: black;
     grid-column-start: 1;
     grid-column-end: 12;
     grid-row-start: 9;
-    grid-row-end: 10;;
+    grid-row-end: 10;
+    ;
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     border-top: 1px solid white;
-    gap:1%;
+    gap: 1%;
     align-items: center;
 }
 
 .Join {
-    display:inline-flex;
+    display: inline-flex;
     color: rgb(239, 197, 167);
-font-size: 2em;
-font-family: 'Times New Roman', Times, serif;
-direction: rtl;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    direction: rtl;
 }
 
-.unlock {color: white;
+.unlock {
+    color: white;
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.name {font-size: 1em;
+.name {
+    font-size: 1em;
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input {background-color: transparent;
+input {
+    background-color: transparent;
     color: grey;
     opacity: 30%;
     border-radius: 25px;
@@ -811,7 +840,9 @@ input {background-color: transparent;
     width: 90%;
     padding-left: 10%;
 }
-.Submit {border-radius: 25px;
+
+.Submit {
+    border-radius: 25px;
     border-color: #efc78b;
     background-color: transparent;
     color: #efc78b;
@@ -821,65 +852,94 @@ input {background-color: transparent;
     margin-top: 7%;
 }
 
-.fx1a {background-color:transparent;
-    flex:70%;
-    display:block;
+.fx1a {
+    background-color: transparent;
+    flex: 70%;
+    display: block;
 
 }
 
-.logofinal {width: 80%;
-height: auto;
-padding-bottom: 10%;
+.logofinal {
+    width: 80%;
+    height: auto;
+    padding-bottom: 10%;
 }
 
-.become{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.become {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
-    color:white;
-}
-.fx1b {background-color: transparent;
-    flex:30%;
-    display:block;
-justify-content:start;
-align-content:end;
-padding-bottom: 5%;
-font-family: ui-sans-serif;
-font-size: small;
+    color: white;
 }
 
-.fx2.a {background-color: transparent;
-       flex:30%;
-    display:block;
-justify-content:start;
-align-content:end;
+.fx1b {
+    background-color: transparent;
+    flex: 30%;
+    display: block;
+    justify-content: start;
+    align-content: end;
+    padding-bottom: 5%;
+    font-family: ui-sans-serif;
+    font-size: small;
+}
+
+.fx2.a {
+    background-color: transparent;
+    flex: 30%;
+    display: block;
+    justify-content: start;
+    align-content: end;
 
 }
 
-.contact{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+.contact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
     padding-top: 10%;
 }
-.fx2.b {flex: 70%;
+
+.fx2.b {
+    flex: 70%;
     direction: rtl;
-;
+    ;
 }
 
-.phone {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.phone {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
     color: white;
     padding-bottom: 3%;
 }
 
-.Call {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.Call {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
-    color:white;}
-
-.final {color: antiquewhite;
-    border:5%;
+    color: white;
 }
 
-.rightf {display:flex;
-    color:antiquewhite;
+.final {
+    color: antiquewhite;
+    border: 5%;
 }
- 
-.derechos{width: 1rem;
-height: 1rem;}
+
+.rightf {
+    display: flex;
+    color: antiquewhite;
+}
+
+.derechos {
+    width: 1rem;
+    height: 1rem;
+}
+.fotofinal{display:none;
+    box-direction: center;
+    height: fit-content;
+    width: fit-content;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.derechos1{
+    display:none;
+    object-fit: contain;
+    width: -webkit-fill-available;
+height: fit-content;}
