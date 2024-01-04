@@ -1,33 +1,36 @@
-*{
-    border: 2px solid Tomato; 
-    overflow-x: hidden;
+* {overflow-x: hidden;
 }
 
-body{margin: 0;}
+body {
+    margin: 0;
+}
+
 .parteprincipal {
     background-image: url(img/fotoprincipal.jpg);
-    background-position-x:center;
-    background-position-y:27%;
+    background-position-x: center;
+    background-position-y: 27%;
     background-repeat: no-repeat;
     background-size: cover;
     /*height: 1080px;;*/
-    filter: drop-shadow(95%);
-    /*width: 100%;*/
+        filter: drop-shadow(95%);
+    
 }
-.logoresp{display: none;
-width: 2em;height: auto;
+
+.logoresp {
+    display: none;
+    width: 2em;
+    height: auto;
 }
 
 .barra_header {
-    background-color: #575a5d3d;;
+    background-color: #575a5d3d;
     width: -webkit-fill-available;
-    /*padding: 20px 30px;*/
     display: inline-flex;
     top: 0%;
     z-index: 1;
     border-bottom: solid 3px aliceblue;
     align-items: center;
-    
+
 }
 
 
@@ -57,10 +60,10 @@ width: 2em;height: auto;
 #logo1 {
     display: inline;
     width: 25%;
-padding-left: 10%;
+    padding-left: 10%;
     background-color: transparent;
     height: fit-content;
-   ;
+    ;
 }
 
 #boton1,
@@ -98,8 +101,10 @@ padding-left: 10%;
     color: antiquewhite;
 }
 
-#Menu1{width: 1em;
-height: fit-content;}
+#Menu1 {
+    width: 1em;
+    height: fit-content;
+}
 
 .follow {
     position: fixed;
@@ -115,8 +120,12 @@ height: fit-content;}
     width: max-content;
     height: fit-content;
 }
-.logohidden{display: hidden;
-width: 1px;height: 1px;}
+
+.logohidden {
+    display: hidden;
+    width: 1px;
+    height: 1px;
+}
 
 hr {
     border-left: 6px solid white;
@@ -129,17 +138,21 @@ hr {
 }
 
 
-.barra1 {display:flex;
+.barra1 {
+    display: flex;
     width: 100%;
     height: fit-content;
 }
 
-.bud{flex: 50%;
+.bud {
+    flex: 50%;
     padding-top: 1%;
     padding-left: 30%;
 }
 
-.parrafo1{display:none;}
+.parrafo1 {
+    display: none;
+}
 
 
 #bfollow {
@@ -154,7 +167,11 @@ hr {
     color: rgb(69, 77, 83);
     height: inherit;
 }
-.titulo{flex: 50%;}
+
+.titulo {
+    flex: 50%;
+}
+
 .titulo {
     background-color: transparent;
     display: flex;
@@ -262,7 +279,7 @@ p {
     height: auto;
     overflow-y: hidden;
     box-sizing: border-box;
-   }
+}
 
 
 .propventa {
@@ -310,24 +327,29 @@ h3 {
 .venta3.1 {
     width: -webkit-fill-available;
     height: fit-content;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
-.ventag{width: -webkit-fill-available;
+
+.ventag {
+    width: -webkit-fill-available;
     height: -webkit-fill-available;
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
-.venta4{
+.venta4 {
     width: -webkit-fill-available;
     height: auto;
     overflow: hidden;
     box-sizing: border-box;
 }
-#renta{width: fit-content;
+
+#renta {
+    width: fit-content;
     height: auto;
     overflow: hidden;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 .galeria1 {
     color: rgb(192, 140, 77);
@@ -363,11 +385,12 @@ h4 {
     align-items: center;
 }
 
-.section3 {border:0;
+.section3 {
+    border: 0;
     display: flex;
     height: fit-content;
     align-items: center;
-  
+
 }
 
 img {
@@ -382,7 +405,7 @@ img {
     flex: 50%;
     display: flex;
     flex-direction: column;
-    width:-webkit-fill-available;
+    width: -webkit-fill-available;
     padding-top: 0%;
 }
 
@@ -416,7 +439,7 @@ img {
 .section4 {
     display: block;
     height: fit-content;
-  }
+}
 
 .galeria3 {
     display: grid;
@@ -441,14 +464,19 @@ img {
     padding: 0% 4%;
 }
 
-.galeriahidden {display:none;}
+.galeriahidden {
+    display: none;
+}
 
 /*Seccion5*/
-#contacto{display:none;}
-.bgaleria5.1{display:none;}
-#contacto{display:none;}
-.art1 {display: none;}
- 
+#contacto {
+    display: none;
+}
+
+.art1 {
+    display: none;
+}
+
 .section5 {
     display: block;
     height: 1011px;
@@ -499,7 +527,7 @@ img {
     grid-area: imga;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 #black2 {
@@ -517,68 +545,74 @@ img {
     display: none;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr);
-  }    
-  #xblack {
+}
+
+#xblack {
     grid-column-start: 1;
-      grid-column-end: 7;
-      grid-row-start: 1;
-      grid-row-end: 5;  
-      background-color: black;
-    }
-  
-  #ablack {
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: black;
+}
+
+#ablack {
     background: black;
     grid-column-start: 1;
-      grid-column-end: 7;
-      grid-row-start: 6;
-      grid-row-end: 9;}
-  
-  #bblack {
-        background: black;
-        grid-column-start: 6;
-      grid-column-end: 7;
-      grid-row-start: 5;
-      grid-row-end: 6;    
-      }
-  
-    #atransparent {
-        background-color: transparent;
-        grid-area: transparent1;
-       
-    }
-    #btransparent {
-        background-color: transparent;
-        grid-area: transparent2;
-    }
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
 
-  #imgin {/*background-image: url(img/instagram.png);*/
-    background-color: #DF991B;
-    background-repeat: no-repeat;
-      background-size: cover;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 5;
-      grid-row-end: 6;}
-  
-  
-  #imgx {background: url(img/x.png); 
-    background-repeat: no-repeat;
-      background-size: cover;
-       grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
+#bblack {
+    background: black;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
     grid-row-end: 6;
-  } 
-  #imgf {background: url(img/facebook.png); 
+}
+
+#atransparent {
+    background-color: transparent;
+    grid-area: transparent1;
+
+}
+#btransparent {
+    background-color: transparent;
+    grid-area: transparent2;
+}
+
+#imgin {
+    background-image: url(img/linkedin1.png);
     background-repeat: no-repeat;
-      background-size: cover;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+
+#imgx {
+    background: url(img/x1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#imgf {
+    background: url(img/facebook1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     grid-column-start: 3;
       grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 6;
-  
-  
-  } 
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+
+}
   #imgi {background: url(img/instagram.png);
     background-repeat: no-repeat;
     background-size: cover;
