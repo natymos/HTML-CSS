@@ -2,10 +2,11 @@
 
   .logohidden{display:none;}
   #Menur1{display: none;}
-  .bgaleria5{display:none}
-  }
-
-
+  .bgaleria5{display:none;}
+  #imga {
+    display:inline;}
+  
+}
 
 @media screen and (width<=1000px){
 .parteprincipal{background-position: center;
@@ -40,7 +41,7 @@
   
   .logo{height: fit-content;}
 h1{color: rgb(238, 230, 205);
-  font-size: 2em
+  font-size: 2em;
   margin: 0%;
 }
 
@@ -235,8 +236,9 @@ h6{font-size: 2em;
       overflow-y: hidden;  
       height:fit-content;      
 }
-
-.art {
+.art{display: none;}
+.art1{display:grid;}
+/*.art1 {
   flex: 60%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -309,7 +311,7 @@ h6{font-size: 2em;
   grid-column-end: 6;
   grid-row-start: 5;
   grid-row-end: 6;
-}
+}*/
 #transparent1 {
   background-color: transparent;
   grid-column-start: 7;
@@ -317,10 +319,9 @@ h6{font-size: 2em;
   grid-row-start: 1;
   grid-row-end: 9;
 }
-#imga {
-  display:none;}
 
-.bgaleria5.1{display:inline;
+
+#contacto{display:inline;
 }
 
 
