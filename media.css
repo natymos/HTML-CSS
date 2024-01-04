@@ -215,9 +215,7 @@ h6{font-size: 2em;
  .bgaleria5.1 { 
     margin-top: 0%;
     overflow-y: hidden;
-    /*font-size: 2em;
-    color: brown; 
-    direction:ltr;*/
+    
     }
 #contacto {font-size: 1em;
   color: #DF991B; 
@@ -227,7 +225,6 @@ h6{font-size: 2em;
 
 .bgaleria5 {display: none;}
 
-/*.tituloservicios{height: 900px }*/
 .imgs{height:fit-content;}
 .description {
       font-size: 1em;
