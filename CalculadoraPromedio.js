@@ -21,9 +21,17 @@ if (isNaN(nota3)||nota3<0||nota3>10){
 let promedio= (nota1+nota2+nota3)/3
 
 
-if (promedio<=10 && promedio>=7){
+switch(promedio){
+    case:promedio<=10&& promedio>=7
+         console.log("¡Felicidades " +nombrealumno+"!, aprobaste " +materia+" con un promedio de:" +promedio.toFixed(1))
+     case:promedio<7
+         alert("Gracias por el esfuerzo "+nombrealumno+", nos vemos pronto en clase. El promedio es: "+promedio.toFixed(1))
+
+}
+
+/*if (promedio<=10 && promedio>=7){
     console.log("¡Felicidades " +nombrealumno+"!, aprobaste " +materia+" con un promedio de:" +promedio.toFixed(1))
 }    
     else if(promedio<7){
       alert("Gracias por el esfuerzo "+nombrealumno+", nos vemos pronto en clase. El promedio es: "+promedio.toFixed(1))
-}
+}*/
