@@ -33,6 +33,7 @@
           </button>
         
           </th>
+          <th>CÓDIGO</th>
           <th>MARCA</th>
           <th>MODELO</th>
           <th>AÑO</th>
@@ -45,11 +46,14 @@
       <tbody>
          <tr *ngFor="let item of ListadoAutos">
         <td><img [src]="item.foto" style="width: 80px;" *ngIf="this.mostrarImagenes"></td>
+          <td>
+              <a [routerLink]="['/Vehiculo/'+ item.codigo]">{{item.codigo}}</a>
+          </td>
           <td>{{item.marca| uppercase}}</td>
           <td>{{item.modelo | uppercase| AEspacio:'-'}}</td>
           <td [innerText] = "item.anio"></td>
           <td>{{item.color}}</td>
-          <td>{{item.kilometros}}</td>
+          <td>{{item.kilometraje}}</td>
           <td>{{item.precio| currency}}</td>
           <td>
           <app-calificacion [calificacion]="item.calificacion"(accionClick)="recepcion($event)"></app-calificacion>  

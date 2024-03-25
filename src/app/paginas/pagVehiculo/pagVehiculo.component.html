@@ -1,8 +1,68 @@
-<div class="card text-center">
+<div class="card">
   <div class="card-header">
-    Vehículo {{Vehiculo.marca}}{{Vehiculo.modelo}}
+    Vehículo {{Vehiculo?.marca}}{{Vehiculo?.modelo}}
   </div>
   <div class="card-body">
-    
-  </div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+          <img src="{{Vehiculo?.foto}}" class="img-thumbnail">
+        </div>
+          <div class="col-1">
+
+          </div>
+
+      <div class="col-6">
+        <div class="mb-3 row">
+         <label for="starcCodigo" class="col-sm-2 col form-label">Código:</label>
+          <div class="col-sn-10">
+            {{Vehiculo?.codigo}}
+           </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Marca:</label>
+           <div class="col-sn-10">
+             {{Vehiculo?.marca}}
+            </div>
+         </div>
+
+         <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Modelo:</label>
+           <div class="col-sn-10">
+             {{Vehiculo?.modelo}}
+            </div>
+         </div>
+
+         <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Color:</label>
+           <div class="col-sn-10">
+             {{Vehiculo?.color}}
+            </div>
+         </div>
+
+         <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Año:</label>
+           <div class="col-sn-10">
+             {{Vehiculo?.anio}}
+            </div>
+         </div>
+
+         <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Kilometraje:</label>
+           <div class="col-sn-10">
+             {{Vehiculo?.kilometraje}}
+            </div>
+         </div>
+
+         <div class="mb-3 row">
+          <label for="starcCodigo" class="col-sm-2 col form-label">Calificación:</label>
+           <div class="col-sn-10">
+             <app-calificacion [calificacion]="Vehiculo?.calificacion"></app-calificacion>
+            </div>
+         </div>
+
+
+      </div>
+    </div>
   </div>

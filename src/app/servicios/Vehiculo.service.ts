@@ -1,17 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Vehiculo } from '../utilitarios/modelos/vehiculo';
+import { Vehiculo } from '../utilitarios/modelos/Vehiculo';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VehiculoService {
+
+
 constructor() { }
 
 getVehiculos(){
   return this.ListadoAutos;
 }
-getVehiculo(codigo:string){
+getVehiculo(codigo:string):Vehiculo|undefined{
+  let Vehiculo= this.ListadoAutos.find(ele=>ele.codigo===codigo);
+  return Vehiculo;
+}
 
+addVehiculo(Vehiculo:Vehiculo){
+  this.ListadoAutos.push(Vehiculo);
 }
 
 private ListadoAutos: Array <Vehiculo> = [
