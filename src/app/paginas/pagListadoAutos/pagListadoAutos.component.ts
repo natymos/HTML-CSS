@@ -11,14 +11,14 @@ export class PagListadoAutosComponent implements OnInit {
   filtro:string="";
 
   @Input() valor:string='';
-  listadoAutos:Array<any> =[];
+  ListadoAutos:Array<any> =[];
 
   constructor(
     private VehiculoService: VehiculoService
   ) {  }
 
   ngOnInit() {
-  this.listadoAutos=this.VehiculoService.getVehiculos();
+  this.ListadoAutos=this.VehiculoService.getVehiculos();
     
   }
 
