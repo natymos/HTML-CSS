@@ -14,7 +14,7 @@ export class PagVehiculoComponent implements OnInit {
     codigo:"",
     marca:"",
     modelo:""
-  }
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -23,8 +23,7 @@ export class PagVehiculoComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe ((params) =>{
-      this.Vehiculo= this.VehiculoService.getVehiculo(params['codigo'])
-    })
-  }
-
+      this.Vehiculo= this.VehiculoService.getVehiculo(params ['codigo']);
+    });
+}
 }

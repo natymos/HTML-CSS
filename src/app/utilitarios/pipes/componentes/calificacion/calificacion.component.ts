@@ -15,10 +15,12 @@ lista:Array<any>=[];
   constructor() { }
 
   ngOnInit() {
+   this.generar();
+  }
+
+  generar(){
     for(let i=0;i<this.calificacion; i++){
       this.lista.push(1);
-      
-      
     }
   }
 select(){

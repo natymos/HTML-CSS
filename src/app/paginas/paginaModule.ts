@@ -6,12 +6,14 @@ import { utilitariosModule } from '../utilitarios/pipes/utilitarios.Module';
 import { CalificacionComponent } from '../utilitarios/pipes/componentes/calificacion/calificacion.component';
 import { PagVehiculoComponent } from './pagVehiculo/pagVehiculo.component';
 import { RouterModule } from '@angular/router';
+import { VehiculoService } from '../servicios/Vehiculo.service';
 
 
 @NgModule({
     declarations: [
         PagListadoAutosComponent,
-        PagVehiculoComponent  
+        PagVehiculoComponent,
+       
        
     ],
     imports: [
@@ -24,6 +26,7 @@ import { RouterModule } from '@angular/router';
         PagListadoAutosComponent,
         CalificacionComponent,
         PagVehiculoComponent
+        
     ],
     providers: [],
 })
