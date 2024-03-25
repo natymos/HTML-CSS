@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { AEspacioPipe } from "./AEspacio.pipe";
 import { CalificacionComponent } from "./componentes/calificacion/calificacion.component";
 import { CommonModule } from "@angular/common";
+import { PagVehiculoComponent } from "../../paginas/pagVehiculo/pagVehiculo.component";
 
 
 @NgModule({
@@ -11,10 +12,12 @@ declarations:[
 ],
 imports:[
 CommonModule
+
 ],
 exports:[
     AEspacioPipe, 
     CalificacionComponent
+    
 ]
 
 

@@ -15,15 +15,14 @@ export class PagVehiculoComponent implements OnInit {
     marca:"",
     modelo:""
   }
+
   constructor(
     private route: ActivatedRoute,
     private VehiculoService:VehiculoService
   ) { }
 
-
-
   ngOnInit() {
-    this.route.params.subscribe(params=>{
+    this.route.params.subscribe ((params) =>{
       this.Vehiculo= this.VehiculoService.getVehiculo(params['codigo'])
     })
   }

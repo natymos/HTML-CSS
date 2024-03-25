@@ -13,7 +13,7 @@ getVehiculos(){
   return this.ListadoAutos;
 }
 getVehiculo(codigo:string):Vehiculo|undefined{
-  let Vehiculo= this.ListadoAutos.find(ele=>ele.codigo===codigo);
+  let Vehiculo= this.ListadoAutos.find(ele => ele.codigo === codigo );
   return Vehiculo;
 }
 

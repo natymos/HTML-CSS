@@ -1,5 +1,5 @@
 export interface Vehiculo {
-    codigo:string;
+    codigo?:string;
     marca?:string;
     color?:string;
     modelo?: string;

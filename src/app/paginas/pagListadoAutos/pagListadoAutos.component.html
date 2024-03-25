@@ -21,7 +21,7 @@
 
 <div class="row">
   <div class="col-sn-10">
-    <table class="table table-black">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th>
@@ -47,7 +47,7 @@
          <tr *ngFor="let item of ListadoAutos">
         <td><img [src]="item.foto" style="width: 80px;" *ngIf="this.mostrarImagenes"></td>
           <td>
-              <a [routerLink]="['/Vehiculo/'+ item.codigo]">{{item.codigo}}</a>
+              <a [routerLink]="['/vehiculo/'+ item.codigo]">{{item.codigo}}</a>
           </td>
           <td>{{item.marca| uppercase}}</td>
           <td>{{item.modelo | uppercase| AEspacio:'-'}}</td>

@@ -11,11 +11,11 @@ const routes: Routes = [
   component: HomeComponent
   },
   {
-  path:"vehiculos",
+  path:"Vehiculos",
   component:PagListadoAutosComponent
   },
   {
-    path:"Vehiculos/codigo",
+    path:"vehiculo/codigo",
     component:PagVehiculoComponent
     },
   {
@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path:"**",
-    component: HomeComponent,
+    component: PagVehiculoComponent ,
     pathMatch:"full"
   },
   {
