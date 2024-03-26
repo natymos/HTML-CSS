@@ -58,6 +58,7 @@ console.log('formulario', this.formulario.value);
 }
 export function validadorCodigo():ValidatorFn {
 return(control:AbstractControl):ValidationErrors|null =>{
+  console.log(control)
 const codigoV = /^\d{3}$/;
 let value=control.value
 if(codigoV.test(value)){

@@ -30,7 +30,7 @@ const routes: Routes = [
   },
   
   {
-    path:"codigo",
+    path:"vehiculo",
     component: PagVehiculoComponent ,
     
   },
