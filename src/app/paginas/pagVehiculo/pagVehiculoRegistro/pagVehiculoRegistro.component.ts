@@ -44,9 +44,9 @@ export class PagVehiculoRegistroComponent implements OnInit {
   }
 
 guardar(){
-  let vehiculo:Vehiculo={...this.formulario.value}
-  this.vehiculoServicio.addVehiculo(this.Vehiculo);
+  let vehiculo:Vehiculo={...this.formulario.value};
+  this.vehiculoServicio.addVehiculo(vehiculo);
   
-console.log('formulario', this.formulario.value)
+console.log('formulario', this.formulario.value);
 }
 }
