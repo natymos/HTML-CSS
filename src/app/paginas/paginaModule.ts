@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PagListadoAutosComponent} from "./pagListadoAutos/pagListadoAutos.component";
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { utilitariosModule } from '../utilitarios/pipes/utilitarios.Module';
 import { CalificacionComponent } from '../utilitarios/pipes/componentes/calificacion/calificacion.component';
 import { PagVehiculoComponent } from './pagVehiculo/pagVehiculo.component';
@@ -22,7 +22,8 @@ import { PagVehiculoRegistroComponent } from './pagVehiculo/pagVehiculoRegistro/
         CommonModule,
     FormsModule,
     utilitariosModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
 ],
     exports: [
         PagListadoAutosComponent,

@@ -23,23 +23,10 @@ export class PagListadoAutosComponent implements OnInit {
   @Input() valor:string='';
   ListadoAutos:Array<any> =[];
  
-  formulario: FormGroup
+  
   constructor(
     private VehiculoService: VehiculoService,
-    private formBuilder:FormBuilder
-  ) {    
-    this.formulario = this.formulario.group({
-"codigo":[],
-"marca":[],
-"modelo":[],
-"color":[],
-"anio":[],
-"kilometraje":[],
-"precio":[],
-"calificacion":[],
-"precio":[]
-
-    });
+     ) {    
   }
 
   ngOnInit() {
