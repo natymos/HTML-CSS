@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { VehiculoService } from '../../../servicios/Vehiculo.service';
 import { Vehiculo } from '../../../utilitarios/modelos/Vehiculo';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, RequiredValidator, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-pagVehiculoRegistro',
@@ -27,26 +28,42 @@ export class PagVehiculoRegistroComponent implements OnInit {
       anio: 0,
       calificacion:0,
     }
-  
-   
+    
   this.formulario = this.formBuilder.group({
-    "codigo":[],
-    "marca":[],
-    "modelo":[],
-    "color":[],
-    "anio":[],
+    "codigo":['',[Validators, RequiredValidator, validadorCodigo]],
+    "marca":['',[Validators, RequiredValidator]],
+    "modelo":['',[Validators, RequiredValidator]],
+    "color":['',[Validators, RequiredValidator]],
+    "anio":['',[Validators, RequiredValidator]],
     "kilometraje":[],
     "precio":[],
     "calificacion":[]
         });
   }
   ngOnInit() {
+  this.formulario.controls['codigo'].disable;
   }
 
-guardar(){
+  guardar(){
   let vehiculo:Vehiculo={...this.formulario.value};
   this.vehiculoServicio.addVehiculo(vehiculo);
+  Swal.fire({
+    title: "Mensaje",
+    text: "Se grabó con éxito!",
+    icon: "info"
+  });
   
 console.log('formulario', this.formulario.value);
+}
+}
+export function validadorCodigo():ValidatorFn {
+return(control:AbstractControl):ValidationErrors|null =>{
+const codigoV = /^\d{3}$/;
+let value=control.value
+if(codigoV.test(value)){
+  return null
+}
+
+return {'codigoValidate': true};
 }
 }

@@ -14,6 +14,7 @@
          <label for="starcCodigo" class="col-sm-2 col form-label">Código:</label>
           <div class="col-sn-10">
            <input type="text" class="form" id="staticCodigo" name="codigo" formControlName="codigo">
+           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['require']">Valor requerido</span>
            </div>
         </div>
 
@@ -70,7 +71,9 @@
      
       </div>
       <div class="row">
-<button class="btn btn-info" (click)="guardar()"> GUARDAR</button>
+         <div class="col-3">
+         <button class="btn btn-info" (click)="guardar()"> GUARDAR</button>
+         </div>
       </div>
     </div>
   </div>

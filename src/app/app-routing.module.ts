@@ -20,7 +20,7 @@ const routes: Routes = [
     component:PagVehiculoComponent
     },
     {
-      path:"vehiculo",
+      path:"RegVehiculo",
       component:PagVehiculoRegistroComponent
       },
   {
@@ -30,9 +30,9 @@ const routes: Routes = [
   },
   
   {
-    path:"**",
+    path:"codigo",
     component: PagVehiculoComponent ,
-    pathMatch:"full"
+    
   },
   {
     path:"Clientes",

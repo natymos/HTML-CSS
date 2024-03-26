@@ -14,7 +14,8 @@ import { PagVehiculoRegistroComponent } from './pagVehiculo/pagVehiculoRegistro/
     declarations: [
         PagListadoAutosComponent,
         PagVehiculoComponent,
-        PagVehiculoRegistroComponent
+        PagVehiculoRegistroComponent,
+        
        
        
     ],
@@ -23,7 +24,8 @@ import { PagVehiculoRegistroComponent } from './pagVehiculo/pagVehiculoRegistro/
     FormsModule,
     utilitariosModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
 ],
     exports: [
         PagListadoAutosComponent,
