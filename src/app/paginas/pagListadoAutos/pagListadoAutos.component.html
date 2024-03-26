@@ -9,16 +9,22 @@
     <div class="row">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Filtro</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="marca, modelo, color" [(ngModel)]="filtro">
+        <input type="text"  class="form-control" id="exampleFormControlInput1" placeholder="marca, modelo, color"  
+      [(ngModel)]="filtro">
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        FILTRADO POR:{{ filtro}}
+        FILTRADO POR:{{ filtro }}
       </div>
     </div>
-
+  <div class="row">
+      <div class="col-2">
+        <a [routerLink]="['/vehiculo/']"class="btn btn-info">NUEVO</a>
+      </div>
+  </div>
+<br>
 <div class="row">
   <div class="col-sn-10">
     <table class="table table-striped">

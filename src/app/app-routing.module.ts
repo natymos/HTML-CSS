@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './paginas/Home/Home.component';
 import { RegistroClientesComponent } from './paginas/RegistroClientes/RegistroClientes/RegistroClientes.component';
 import { PagVehiculoComponent } from './paginas/pagVehiculo/pagVehiculo.component';
+import { PagVehiculoRegistroComponent } from './paginas/pagVehiculo/pagVehiculoRegistro/pagVehiculoRegistro.component';
 
 const routes: Routes = [
   {
@@ -18,11 +19,16 @@ const routes: Routes = [
     path:"vehiculo/:codigo",
     component:PagVehiculoComponent
     },
+    {
+      path:"vehiculo",
+      component:PagVehiculoRegistroComponent
+      },
   {
     path:"",
     component: HomeComponent,
     pathMatch:"full"
   },
+  
   {
     path:"**",
     component: PagVehiculoComponent ,

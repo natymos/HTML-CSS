@@ -7,12 +7,14 @@ import { CalificacionComponent } from '../utilitarios/pipes/componentes/califica
 import { PagVehiculoComponent } from './pagVehiculo/pagVehiculo.component';
 import { RouterModule } from '@angular/router';
 import { VehiculoService } from '../servicios/Vehiculo.service';
+import { PagVehiculoRegistroComponent } from './pagVehiculo/pagVehiculoRegistro/pagVehiculoRegistro.component';
 
 
 @NgModule({
     declarations: [
         PagListadoAutosComponent,
         PagVehiculoComponent,
+        PagVehiculoRegistroComponent
        
        
     ],
@@ -25,7 +27,8 @@ import { VehiculoService } from '../servicios/Vehiculo.service';
     exports: [
         PagListadoAutosComponent,
         CalificacionComponent,
-        PagVehiculoComponent
+        PagVehiculoComponent,
+        PagVehiculoRegistroComponent
         
     ],
     providers: [],

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { VehiculoService } from '../../servicios/Vehiculo.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-pagListadoAutos',
@@ -8,27 +9,56 @@ import { VehiculoService } from '../../servicios/Vehiculo.service';
 })
 export class PagListadoAutosComponent implements OnInit {
   mostrarImagenes=true;
-  filtro:string="";
+  private _filtro:string ="";
 
-  @Input() valor:string='';
-  ListadoAutos:Array<any> =[];
-
-  constructor(
-    private VehiculoService: VehiculoService
-  ) {  }
-
-  ngOnInit() {
-  this.ListadoAutos=this.VehiculoService.getVehiculos();
-    this.VehiculoService.addVehiculo({"codigo":"A008","foto":null,"marca":"Rolls Royce","modelo":"Cullinan III","anio":2023,"color":"gris","kilometraje":90000,"precio":550000,"calificacion":4});
-    this.VehiculoService.addVehiculo({"codigo":"A009","foto":null,"marca":"Rolls Royce","modelo":"Cullinan I","anio":2020,"color":"gris","kilometraje":90000,"precio":450000,"calificacion":3})
+  get filtro(){
+    return this._filtro
   }
 
+  set filtro(data:string){
+    this._filtro=data;
+    this.consultaVehiculos();
+  }
+ 
+  @Input() valor:string='';
+  ListadoAutos:Array<any> =[];
+ 
+  formulario: FormGroup
+  constructor(
+    private VehiculoService: VehiculoService,
+    private formBuilder:FormBuilder
+  ) {    
+    this.formulario = this.formulario.group({
+"codigo":[],
+"marca":[],
+"modelo":[],
+"color":[],
+"anio":[],
+"kilometraje":[],
+"precio":[],
+"calificacion":[],
+"precio":[]
+
+    });
+  }
+
+  ngOnInit() {
+    this.consultaVehiculos();
+  }
+     
 mostrar(){
   this.mostrarImagenes=!this.mostrarImagenes
 }
-recepcion(dato:number){
+consultaVehiculos(){
+  this.VehiculoService.getVehiculos(this.filtro).subscribe(data => {
+    this.ListadoAutos=data;
+  })
+}
+
+recepcion (dato:number){
 console.log('Dato:',dato);
 }
+
 
 
 }
