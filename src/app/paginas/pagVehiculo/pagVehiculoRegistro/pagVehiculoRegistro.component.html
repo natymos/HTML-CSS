@@ -8,16 +8,23 @@
     </div>
     <div class="row">        
 
-      <div class="col-12">
-      <form [formGroup]="formulario">
-        <div class="mb-3 row">
+   <div class="col-12">
+     <form [formGroup]="formulario">
+       <div class="mb-3 row">
          <label for="starcCodigo" class="col-sm-2 col form-label">Código:</label>
+
           <div class="col-sn-10">
            <input type="text" class="form-control" name="codigo" formControlName="codigo">
-           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['require']">Valor requerido</span>
+           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['require']">Valor requerido</span><br>
+           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['codigoValidate']">Solo acepta dígitos</span>
            </div>
-        </div>
 
+        
+        <div class="col-sn-10">
+         <input type="text" class="form-control" name="codigo" formControlName="codigo_confirm">
+         <span class="text-danger" *ngIf="formulario.errors?.['codigo_comparativo']">No son iguales</span>
+         </div>
+      
         <div class="mb-3 row">
           <label for="starcCodigo" class="col-sm-2 col form-label">Marca:</label>
            <div class="col-sn-10">
@@ -67,13 +74,15 @@
             <input type="number" class="form-control"  name="Calificacion"formControlName="calificacion">
             </div>
          </div>
-      </form>
+       
      
       </div>
+   </form>
       <div class="row">
          <div class="col-3">
          <button class="btn btn-info" (click)="guardar()"> GUARDAR</button>
          </div>
       </div>
-    </div>
-  </div>
+   </div>
+ 
+</div>
