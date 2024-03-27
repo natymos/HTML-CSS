@@ -20,7 +20,7 @@ const routes: Routes = [
     component:PagVehiculoComponent
     },
     {
-      path:"RegVehiculo",
+      path:"vehiculo",
       component:PagVehiculoRegistroComponent
       },
   {
