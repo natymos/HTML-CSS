@@ -18,11 +18,13 @@ getVehiculos(filtro:any): Observable <Array<Vehiculo>>{
   })
   return escucha;
 }
-getVehiculo (codigo:string):Vehiculo|undefined{
-  let Vehiculo= this.ListadoAutos.find ( ele => {
-    return ele.codigo === codigo;
-  } );
-  return Vehiculo;
+getVehiculo (codigo:string):Observable <Vehiculo>{
+  const dato: Observable <Vehiculo>=new Observable (consulta => {
+ let Vehiculo= this.ListadoAutos.find ( ele => ele.codigo === codigo);
+     consulta.next (Vehiculo);
+  });
+  return dato;
+ 
 }
 
 addVehiculo(Vehiculo:Vehiculo){

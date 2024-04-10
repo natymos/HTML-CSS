@@ -15,10 +15,9 @@
 
           <div class="col-sn-10">
            <input type="text" class="form-control" name="codigo" formControlName="codigo">
-           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['require']">Valor requerido</span><br>
-          
-           </div>
-
+           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['require']">Valor requerido</span>          
+           <span class="text-danger" *ngIf="formulario.controls['codigo'].errors?.['codigoValidate']">Solo se acepta dígitos</span>          
+         </div>
         
         <div class="col-sn-10">
          <input type="text" class="form-control" name="codigo" formControlName="codigo_confirm">

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { VehiculoService } from '../../servicios/Vehiculo.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-pagListadoAutos',
   templateUrl: './pagListadoAutos.component.html',
@@ -31,6 +32,7 @@ export class PagListadoAutosComponent implements OnInit {
 
   ngOnInit() {
     this.consultaVehiculos();
+    this.ListadoAutos = this.VehiculoService.getVehiculo('codigo');
   }
      
 mostrar(){

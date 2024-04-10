@@ -13,7 +13,8 @@ const routes: Routes = [
   },
   {
   path:"Vehiculos",
-  component:PagListadoAutosComponent
+  component:PagListadoAutosComponent,
+  pathMatch:"full"
   },
   {
     path:"vehiculo/:codigo",
