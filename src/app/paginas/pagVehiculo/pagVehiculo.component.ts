@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Vehiculo } from '../../utilitarios/modelos/Vehiculo';
 import { ActivatedRoute } from '@angular/router';
 import { VehiculoService } from '../../servicios/Vehiculo.service';
+import { PagListadoAutosComponent } from '../pagListadoAutos/pagListadoAutos.component';
 
 @Component({
   selector: 'app-pagVehiculo',
@@ -23,7 +24,7 @@ export class PagVehiculoComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe ((params) =>{
-      this.Vehiculo =this.VehiculoService.getVehiculo(params ['codigo']);
+      this.VehiculoService.getVehiculo(params ['codigo']);
     });
 }
 }

@@ -48,8 +48,8 @@ export class PagVehiculoRegistroComponent implements OnInit {
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe(params =>{
-      this.vehiculoServicio.getVehiculo(params:['codigo']).subscribe (data =>{
-        this.Vehiculo = data;
+      this.vehiculoServicio.getVehiculo(params['codigo']).subscribe (data =>{
+        this.Vehiculo = data;    
         this.formulario.controls['codigo'].setValue(this.Vehiculo?.marca);
         this.formulario.controls['marca'].setValue(this.Vehiculo?.marca);
         this.formulario.controls['modelo'].setValue(this.Vehiculo?.marca);

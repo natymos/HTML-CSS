@@ -30,9 +30,9 @@ export class PagListadoAutosComponent implements OnInit {
      ) {    
   }
 
-  ngOnInit() {
+        ngOnInit() {
     this.consultaVehiculos();
-    this.ListadoAutos = this.VehiculoService.getVehiculo('codigo');
+         this.VehiculoService.getVehiculo('codigo');
   }
      
 mostrar(){
